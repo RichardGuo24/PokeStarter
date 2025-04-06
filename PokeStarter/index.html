@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PokeStarter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="display: flex; align-items: center; gap: 0.5rem;">
+            <img src="/PokeStarter/assets/pokemon symbol.png" alt="Logo"
+                style="height: 40px; vertical-align: middle;" />
+            PokeStarter
+        </h1>
+        <p>Ask any question about Pokémon card collecting hobby!</p>
+
+        <!-- Prompt box -->
+        <textarea id="prompt" placeholder="e.g. How do I start collecting vintage Pokémon cards?"></textarea>
+
+        <!-- Budget input (added!) -->
+        <input id="budget" type="number" min="1" placeholder="Enter your budget (e.g. 25)" required />
+
+        <button onclick="getResponse()">Ask</button>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
